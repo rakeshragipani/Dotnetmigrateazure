@@ -1,0 +1,7 @@
+C:\Users\rragipani\Desktop\ADO.net\Helloworld\bin\Debug\net6.0\publish\Helloworld.exe
+C:\Users\rragipani\Desktop\ADO.net\Helloworld\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\Users\rragipani\Desktop\ADO.net\Helloworld\bin\Debug\net6.0\publish\appsettings.json
+C:\Users\rragipani\Desktop\ADO.net\Helloworld\bin\Debug\net6.0\publish\Helloworld.dll
+C:\Users\rragipani\Desktop\ADO.net\Helloworld\bin\Debug\net6.0\publish\Helloworld.deps.json
+C:\Users\rragipani\Desktop\ADO.net\Helloworld\bin\Debug\net6.0\publish\Helloworld.runtimeconfig.json
+C:\Users\rragipani\Desktop\ADO.net\Helloworld\bin\Debug\net6.0\publish\Helloworld.pdb
