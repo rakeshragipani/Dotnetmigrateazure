@@ -1,0 +1,40 @@
+# ASP.NET Core
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  buildConfiguration: 'Release'
+
+
+steps:
+- task: DotNetCoreCLI@2
+  displayName: Restore
+  inputs:
+    command: restore
+    projects: '**/*.csproj'
+    feedsToUse: 'select'
+   # projects: '$(Parameters.RestoreBuildProjects)'
+
+- task: DotNetCoreCLI@2
+  displayName: Build
+  inputs:
+    #projects: '$(Parameters.RestoreBuildProjects)'
+    projects: '**/*.csproj'
+    feedsToUse: 'select'
+    #arguments: '--configuration $(BuildConfiguration)'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+- task: Docker@2
+  displayName: Build and push image
+  inputs:
+    command: buildAndPush
+    containerRegistry: 'DockerHub'
+    repository: 'rakeshragipani/mydotnetapp'
+    dockerfile: '**/Dockerfile'
+
