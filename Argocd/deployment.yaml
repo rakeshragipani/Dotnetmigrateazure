@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydotnetapp
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: mydotnetapp
+  template:
+    metadata:
+      labels:
+        app: mydotnetapp
+    spec:
+      containers:
+      - image: rakeshragipani/mydotnetapp
+        name: mydotnetapp
+        ports:
+        - containerPort: 80

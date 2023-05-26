@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: argo-application-dotnet
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://Innominds-scrum-board@dev.azure.com/Innominds-scrum-board/HelloWorld-dotnet%20App/_git/HelloWorld-dotnet%20App
+    targetRevision: HEAD
+    path: Argocd
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: mydotnet
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+     selfHeal: true
+     prune: true
