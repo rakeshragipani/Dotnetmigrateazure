@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://Innominds-scrum-board@dev.azure.com/Innominds-scrum-board/HelloWorld-dotnet%20App/_git/HelloWorld-dotnet%20App
+    repoURL: https://github.com/rakeshragipani/Dotnetmigrateazure.git
     targetRevision: HEAD
     path: Argocd
   destination:
