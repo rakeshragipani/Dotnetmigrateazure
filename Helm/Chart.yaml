@@ -1,0 +1,4 @@
+apiVersion: v2
+name: mydotnetapp
+version: 1.0.0
+description: My .NET application Helm chart
