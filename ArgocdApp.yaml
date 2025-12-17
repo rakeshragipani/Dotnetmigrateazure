@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/rakeshragipani/Dotnetmigrateazure.git
     targetRevision: HEAD
-    path: Argocd
+    path: argocd
   destination:
     server: https://kubernetes.default.svc
     namespace: mydotnet
