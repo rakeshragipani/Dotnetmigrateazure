@@ -14,7 +14,7 @@ spec:
         app: mydotnetapp
     spec:
       containers:
-      - image: rakeshragipani/mydotnetapp
+      - image: rakeshragipani/mydotnetapp:95
         name: mydotnetapp
         ports:
         - containerPort: 80
